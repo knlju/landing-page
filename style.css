@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;900&display=swap');
+
+:root {
+    --darkBlue: 77, 150, 168;
+    --lightBlue: #8FE3F9;
+    --darkPurple: #855FB1;
+    --lightPurple: #D9B8FF;
+    --gentleBlack: #28283D;
+    --gentleWhite: #FAFAFA;
+    --gentleGray: #87879D;
+}
+
+body {
+    font-family: "Red Hat Display", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: bold;
+}
+
+/* TODO: sta mu dodje ovaj overline */
+
+
+
+footer {
+    background-image: url(week-3-task-1/assets/desktop/image-footer.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.footer-container {
+    background-color: rgba(var(--darkBlue), 0.8);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 105px 165px;
+    color: var(--gentleWhite);
+}
+
+.button {
+    padding: 16px 29px;
+    border-radius: 30px;
+    white-space: nowrap;
+    background-color: var(--darkPurple);
+    color: var(--gentleWhite);
+    font-family: "Red Hat Display", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: none;
+}
+
+.button-span {
+    font-weight: normal;
+}
