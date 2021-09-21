@@ -15,6 +15,7 @@ body {
     font-size: 18px;
     line-height: 24px;
     margin: 0;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -90,7 +91,6 @@ h2 {
 .top-content {
     display: flex;
     text-align: center;
-    /* gap: 75px; */
 }
 
 .top-content>* {
@@ -101,6 +101,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 .faces .face-image {
