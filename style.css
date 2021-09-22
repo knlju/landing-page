@@ -4,7 +4,7 @@
     --darkBlue: 77, 150, 168;
     --lightBlue: #8FE3F9;
     --darkPurple: #855FB1;
-    --lightPurple: 133, 95, 177;
+    --lightPurple: #D9B8FF;
     --gentleBlack: #28283D;
     --gentleWhite: #FAFAFA;
     --gentleGray: #87879D;
@@ -66,7 +66,7 @@ h2 {
 }
 
 .button-purple:hover {
-    background-color: rgb(var(--lightPurple));
+    background-color: #B18BDD;
     cursor: pointer;
 }
 
@@ -75,12 +75,17 @@ h2 {
 }
 
 .button-blue:hover {
-    background-color: rgb(var(--lightBlue));
+    background-color: #71C0D4;
     cursor: pointer;
 }
 
 .button-span {
     font-weight: normal;
+    color: var(--lightBlue);
+}
+
+.footer-bs {
+    color: #D9B8FF;
 }
 
 .logo {
@@ -199,7 +204,7 @@ h2 {
     max-width: 70%;
 }
 
-.gallery .gallery-image {
+.gallery-image {
     flex: 1;
     width: 25%;
     border-radius: .7vw;
@@ -319,8 +324,6 @@ h2 {
 
     .mid-content-controls {
         flex-direction: column;
-        /* padding: 0 100px; */
-        /* margin: 0 auto; */
     }
 
     .button-blue {
