@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap');
+
+:root {
+    --darkBlue: 77, 150, 168;
+    --lightBlue: #8FE3F9;
+    --darkPurple: #855FB1;
+    --lightPurple: #D9B8FF;
+    --gentleBlack: #28283D;
+    --gentleWhite: #FAFAFA;
+    --gentleGray: #87879D;
+}
+
+body {
+    font-family: "Red Hat Display", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+    background-color: var(--gentleWhite);
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: bold;
+}
+
+.footer {
+    background-image: url(img/desktop/image-footer.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.footer-container {
+    background-color: rgba(var(--darkBlue), 0.8);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 105px 165px;
+    color: var(--gentleWhite);
+}
+
+.footer-header,
+.footer-content {
+    flex-basis: 350px;
+}
+
+.button {
+    padding: 16px 29px;
+    border-radius: 30px;
+    white-space: nowrap;
+    color: var(--gentleWhite);
+    font-family: "Red Hat Display", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: none;
+}
+
+.button-purple {
+    background-color: var(--darkPurple);
+}
+
+.button-purple:hover {
+    background-color: #B18BDD;
+    cursor: pointer;
+}
+
+.button-blue {
+    background-color: rgb(var(--darkBlue));
+}
+
+.button-blue:hover {
+    background-color: #71C0D4;
+    cursor: pointer;
+}
+
+.button-span {
+    font-weight: normal;
+    color: var(--lightBlue);
+}
+
+.footer-bs {
+    color: #D9B8FF;
+}
+
+.logo {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.top-content {
+    display: flex;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.faces-left {
+    flex-basis: 30%;
+}
+
+.mid-content {
+    flex-basis: 40%;
+    padding: 3%;
+    box-sizing: border-box;
+}
+
+.main-text {
+    color: var(--gentleGray);
+}
+
+.faces-right {
+    flex-basis: 30%;
+}
+
+.faces {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.face-image {
+    border-radius: 50%;
+    height: auto;
+    width: 70%;
+    margin-bottom: 10%;
+}
+
+.cropped-left {
+    margin-left: -10%;
+}
+
+.cropped-right {
+    margin-right: -10%;
+}
+
+.moved-bot {
+    margin-top: 25%;
+}
+
+.moved-top {
+    margin-bottom: 25%;
+}
+
+.mid-content-controls {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.button-blue {
+    margin-right: 8px;
+}
+
+.scroll-show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 0;
+}
+
+.overlapping-with-footer {
+    padding: 72px 0 0 0;
+    margin-bottom: -28px;
+}
+
+.scroll-line {
+    border-right: 1px solid #D8D8D8;
+    height: 84px;
+}
+
+.scroll-number {
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 1px solid #D8D8D8;
+    width: 56px;
+    height: 56px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gentleGray);
+    font-weight: bold;
+    background-color: var(--gentleWhite);
+}
+
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    max-width: 70%;
+}
+
+.gallery-image {
+    flex: 1;
+    width: 25%;
+    border-radius: .7vw;
+}
+
+.overline {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgb(var(--darkBlue));
+    font-weight: bold;
+}
+
+.bot-content {
+    max-width: 540px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 25px;
+}
+
+.bc-header {
+    padding: 16px 48px 32px;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 1025px) {
+
+    /* footer */
+    .footer {
+        background: url(img/tablet/image-footer.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        padding: 60px 100px;
+        text-align: center;
+    }
+
+    .footer-header {
+        max-width: 460px;
+    }
+
+    .footer-content {
+        max-width: 600px;
+    }
+
+    .footer-header,
+    .footer-content {
+        flex-basis: auto;
+    }
+
+    .footer .button {
+        margin-top: 40px;
+    }
+
+    /* top content */
+
+    .top-content {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .faces {
+        flex-basis: 50%;
+    }
+
+    .mid-content {
+        order: 1;
+        flex-basis: auto;
+        margin: 0 20%;
+    }
+
+    /* faces */
+
+    .mid-content h1 {
+        margin-top: 0;
+    }
+
+    .faces-right .images-column {
+        margin-bottom: 25%;
+    }
+
+    .faces-right .moved-bot {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (max-width:769px) {
+    
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+}
+
+@media screen and (max-width:481px) {
+
+    h1 {
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    h2 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .mid-content-controls {
+        flex-direction: column;
+    }
+
+    .button-blue {
+        margin: 0;
+    }
+
+    .button-purple {
+        margin: 10px 0 0 0;
+    }
+
+    .mid-content {
+        order: 1;
+        margin: 0 auto;
+        max-width: 90%;
+    }
+
+    .footer-container {
+        padding: 24px;
+    }
+
+    .footer-container {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .bc-header {
+        padding: 24px 0 32px;
+    }
+
+    .logo {
+        padding: 40px 0;
+    }
+
+    .gallery {
+        flex-wrap: wrap;
+    }
+
+    .gallery-image {
+        flex: auto;
+        width: calc(50% - 15px);
+        border-radius: 2vw;
+    }
+    
+    .footer {
+        background: url(img/mobile/image-footer.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+}
